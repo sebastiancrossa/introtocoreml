@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="1" green="0.91008226395233049" blue="0.95956671446139497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-Pf-xTH" customClass="RoundedShadowView" customModule="Visionary" customModuleProvider="target">
-                                <rect key="frame" x="20" y="30" width="335" height="60"/>
+                                <rect key="frame" x="20" y="35" width="335" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-Pc-Hjq">
                                         <rect key="frame" x="8" y="8" width="319" height="44"/>
@@ -84,7 +84,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rpz-jQ-Gfj" secondAttribute="trailing" constant="20" id="U68-Rh-Xql"/>
                             <constraint firstItem="8sN-PH-J9a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VdF-jn-6Qh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a5W-5f-5Zh" secondAttribute="bottom" constant="20" id="gCf-LS-9um"/>
-                            <constraint firstItem="CuV-Pf-xTH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="vIg-vf-FVL"/>
+                            <constraint firstItem="CuV-Pf-xTH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="vIg-vf-FVL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
