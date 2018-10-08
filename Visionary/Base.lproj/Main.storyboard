@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sN-PH-J9a" userLabel="Camera View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-Pf-xTH">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CuV-Pf-xTH" customClass="RoundedShadowView" customModule="Visionary" customModuleProvider="target">
                                         <rect key="frame" x="20" y="30" width="335" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-Pc-Hjq">
@@ -51,7 +51,7 @@
                                             <constraint firstAttribute="height" constant="60" id="wio-hw-lYX"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5W-5f-5Zh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5W-5f-5Zh" customClass="RoundedShadowButton" customModule="Visionary" customModuleProvider="target">
                                         <rect key="frame" x="20" y="613" width="105" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -62,7 +62,7 @@
                                             <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rpz-jQ-Gfj">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rpz-jQ-Gfj" customClass="RoundedShadowImageView" customModule="Visionary" customModuleProvider="target">
                                         <rect key="frame" x="280" y="519" width="75" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="75" id="p96-Vc-SSX"/>
@@ -96,6 +96,7 @@
                         <outlet property="capturedImageView" destination="8sN-PH-J9a" id="lLE-2L-siH"/>
                         <outlet property="confidenceLabel" destination="bgr-LD-A4u" id="1u1-bu-iLb"/>
                         <outlet property="flashButton" destination="a5W-5f-5Zh" id="OQd-5i-6Kh"/>
+                        <outlet property="identifierLabel" destination="CuV-Pf-xTH" id="vDc-xp-r1b"/>
                         <outlet property="itemIdentification" destination="Qh6-0Z-G1Q" id="DBQ-nW-zQ5"/>
                     </connections>
                 </viewController>
