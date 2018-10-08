@@ -14,7 +14,7 @@ class RoundedShadowImageView: UIImageView {
         // darGray color needs to be cgColor to be used as a shadow color
         self.layer.shadowColor = UIColor.darkGray.cgColor
         self.layer.shadowRadius = 10
-        self.layer.shadowOpacity = 0.75
+        self.layer.shadowOpacity = 0.30
         
         self.layer.cornerRadius = 10
     }

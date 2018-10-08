@@ -22,6 +22,10 @@ class CameraVC: UIViewController {
         
         
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
 }
 
