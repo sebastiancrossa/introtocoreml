@@ -90,7 +90,7 @@
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="8sN-PH-J9a" id="mfa-qZ-uCH"/>
-                        <outlet property="capturedImageView" destination="8sN-PH-J9a" id="lLE-2L-siH"/>
+                        <outlet property="capturedImageView" destination="rpz-jQ-Gfj" id="OER-O8-FaD"/>
                         <outlet property="confidenceLabel" destination="bgr-LD-A4u" id="1u1-bu-iLb"/>
                         <outlet property="flashButton" destination="a5W-5f-5Zh" id="OQd-5i-6Kh"/>
                         <outlet property="identifierLabel" destination="CuV-Pf-xTH" id="vDc-xp-r1b"/>
