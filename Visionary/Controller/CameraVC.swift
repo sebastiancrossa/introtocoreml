@@ -11,6 +11,11 @@ import AVFoundation
 import CoreML
 import Vision
 
+enum FlashState {
+    case on
+    case off
+}
+
 class CameraVC: UIViewController {
 
     // MARK : Variable declarations
@@ -19,6 +24,8 @@ class CameraVC: UIViewController {
     var previewLayer: AVCaptureVideoPreviewLayer!
     
     var photoData: Data?
+    
+    var flashControlState: FlashState = .off
     
     // MARK : Outlet connections
     @IBOutlet weak var capturedImageView: RoundedShadowImageView!
@@ -85,6 +92,13 @@ class CameraVC: UIViewController {
         let previewFormat = [kCVPixelBufferPixelFormatTypeKey as String: previewPixelType, kCVPixelBufferWidthKey as String: 160, kCVPixelBufferHeightKey as String: 160]
         
         settings.previewPhotoFormat = previewFormat
+        
+        if flashControlState == .off {
+            settings.flashMode = .off
+        } else {
+            settings.flashMode = .on
+        }
+        
         output.capturePhoto(with: settings, delegate: self)
     }
     
@@ -104,6 +118,17 @@ class CameraVC: UIViewController {
                 
                 break
             }
+        }
+    }
+    
+    @IBAction func flashButtonPressed(_ sender: Any) {
+        switch flashControlState {
+        case .off:
+            flashButton.setTitle("FLASH ON", for: .normal)
+            flashControlState = .on
+        case .on:
+            flashButton.setTitle("FlASH OFF", for: .normal)
+            flashControlState = .off
         }
     }
     
