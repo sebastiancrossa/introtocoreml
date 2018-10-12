@@ -327,11 +327,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29BFEDRFS6;
 				INFOPLIST_FILE = Visionary/Info.plist;
-<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-=======
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
->>>>>>> ui-development
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,11 +347,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29BFEDRFS6;
 				INFOPLIST_FILE = Visionary/Info.plist;
-<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-=======
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
->>>>>>> ui-development
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
