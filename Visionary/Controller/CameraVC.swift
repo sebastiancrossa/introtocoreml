@@ -88,11 +88,22 @@ class CameraVC: UIViewController {
         output.capturePhoto(with: settings, delegate: self)
     }
     
-    func resultsMethod(request: VNCoreMLRequest, error: Error?) {
+    func resultsMethod(request: VNRequest, error: Error?) {
         guard let results = request.results as? [VNClassificationObservation] else { return } // VNClassificationObservation does the image analysis and throws a results
         
         for clasification in results {
-            
+            if clasification.confidence < 0.5 {
+                print(clasification.identifier)
+                self.itemIdentification.text = "I'm not sure what this object is."
+                self.confidenceLabel.text = " "
+                
+                break
+            } else {
+                self.itemIdentification.text = clasification.identifier // .identifier will return the string of what the model just sawy
+                self.confidenceLabel.text = "CONFIDENCE: \(Int(clasification.confidence * 100))%"
+                
+                break
+            }
         }
     }
     
@@ -111,7 +122,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
             
             do {
                 let model = try VNCoreMLModel(for: SqueezeNet().model) // Connecting to out CoreML model
-                let request = VNCoreMLRequest(model: model, completionHandler: resultsMethod as? VNRequestCompletionHandler)
+                let request = VNCoreMLRequest(model: model, completionHandler: resultsMethod)
                 let handler = VNImageRequestHandler(data: photoData!)
                 
                 try handler.perform([request])
