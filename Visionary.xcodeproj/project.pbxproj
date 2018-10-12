@@ -15,6 +15,7 @@
 		98446403216ADD9400273020 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98446402216ADD9400273020 /* RoundedShadowView.swift */; };
 		98446405216AE0CF00273020 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98446404216AE0CF00273020 /* RoundedShadowButton.swift */; };
 		98446407216AE10200273020 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98446406216AE10200273020 /* RoundedShadowImageView.swift */; };
+		98EE0B3F217045BE006D6B1C /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 98EE0B3E217045BD006D6B1C /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		98446402216ADD9400273020 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		98446404216AE0CF00273020 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		98446406216AE10200273020 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		98EE0B3E217045BD006D6B1C /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		98446401216AD58C00273020 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				98EE0B3E217045BD006D6B1C /* SqueezeNet.mlmodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				984463EF216AD0E900273020 /* CameraVC.swift in Sources */,
+				98EE0B3F217045BE006D6B1C /* SqueezeNet.mlmodel in Sources */,
 				984463ED216AD0E900273020 /* AppDelegate.swift in Sources */,
 				98446403216ADD9400273020 /* RoundedShadowView.swift in Sources */,
 				98446405216AE0CF00273020 /* RoundedShadowButton.swift in Sources */,
@@ -327,7 +331,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29BFEDRFS6;
 				INFOPLIST_FILE = Visionary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -347,7 +350,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29BFEDRFS6;
 				INFOPLIST_FILE = Visionary/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
